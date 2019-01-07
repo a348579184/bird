@@ -41,6 +41,14 @@
       return {
         msg: 'Welcome to Your Vue.js App'
       }
+    },
+    mounted:function(){
+    	fetch('https://api.github.com/users/chriscoyier/repos')
+  .then(response => response.json())
+  .then(data => {
+    // data就是我们请求的repos
+    console.log(data)
+  });
     }
   }
 </script>
