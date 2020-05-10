@@ -120,7 +120,7 @@ class Compile {
         this.compileElement(node)
       } else if (this.isInter(node)) {
         // 文本节点
-        // console.log('文本节点', node.textContent);
+        console.log('文本节点', node.textContent);
         // double kill
         this.compileText(node)
       }
